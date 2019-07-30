@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>React Project</title>
+        <script src="https://unpkg.com/react@16.8.6/umd/react.development.js"></script>
+        <script src="https://unpkg.com/react-dom@16.8.6/umd/react-dom.development.js"></script>
+        <script src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script>
+
+    </head>
+    <body>
+        <div id="root"></div>
+        <script type="text/babel">
+            let angka = 1;
+            let testObject = [
+                {awal : "opik", akhir : "abdul", link : "/1"},
+                {awal : "abang", akhir : "aaaa", link : "/2"}
+            ]
+
+            let testCss = {
+                color: 'green',
+                fontSize: 12
+            }
+
+            ReactDOM.render(
+                <div>
+                    <h1 style={testCss}>Halooh</h1>
+                    <div>
+                        <label>Sharing Session {angka}</label>
+                        <label>Nama Peserta</label>
+                        <ul>
+                        {
+                            testObject.map((tObject, i) =>
+                                <li key={i}>
+                                   <a href={tObject.link} > {tObject.awal} </a>
+                                </li>
+                            )
+                        }
+                        </ul>
+                    </div>
+                </div>,
+                document.getElementById("root")
+            )
+        </script>
+    </body>
+</html>
