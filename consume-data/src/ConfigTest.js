@@ -1,0 +1,1 @@
+export const Test = 'http://192.168.3.239:9773/azec-services-customer-development/customerpurchase/datamart/';
