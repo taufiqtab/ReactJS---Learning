@@ -10,6 +10,9 @@ berisi Traditional ReactJS dengan 2 jenis, dengan babel dan tanpa babel
 - customer-react
 project modern ReactJS yang dibentuk dengan menggunakan "npm create react-app namaProject"
 
+- consume-data
+project ReactJS dengan mengambil data dari API dan mengolah serta menampilkannya
+
 hal yang perlu di setup :
 
 1. install nodejs & npm https://nodejs.org/en/download/current/
